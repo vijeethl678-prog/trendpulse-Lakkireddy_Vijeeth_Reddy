@@ -50,7 +50,7 @@ def fetch_story_details(story_id):
         return None
 def main():
     # Start the collection process
-    print("Starting data collection...")
+    print("Starting data collection")
     top_ids = fetch_top_stories()
 
     if not top_ids:
@@ -77,7 +77,7 @@ def main():
                         break # Stop checking other keywords for this story once matched
 
         # Wait 2 seconds after completing one full category loop
-        print(f"Finished {category_name} loop. Sleeping...")
+        print(f"Finished {category_name} loop. Sleeping")
         time.sleep(2)
 
     print(f"Successfully collected {len(categorized_data)} stories.")
